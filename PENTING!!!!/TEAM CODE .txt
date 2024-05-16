@@ -1,0 +1,70 @@
+TEAM CODE :
+
+============================= HTML  ============================================
+
+
+  <!-- Section Tema Awal -->
+
+    <!-- <section id="team" class="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Dapur Team</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ad quis dolor quia doloribus
+                        quod, hic eligendi totam vero quos?</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="team-member px-4 py-5 shadow-on text-center">
+                        <img src="./project-1-img/Team/Tema Kitchen (1).png" alt="Tema Kitchen 1">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Jhon Chena Jez</h4>
+                            <p class="mb-0">Master Chef </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="team-member px-4 py-5 shadow-on text-center">
+                        <img src="./project-1-img/Team/Tema Kitchen (3).png" alt="Tema Kitchen 1">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Mack Buz </h4>
+                            <p class="mb-0">Master Chef </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="team-member px-4 py-5 shadow-on text-center">
+                        <img src="./project-1-img/Team/Tema Kitchen (2).png" alt="Tema Kitchen 1">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Mr. Deemz</h4>
+                            <p class="mb-0">Master Chef </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Section Team Akhir -->
+
+
+
+
+================================== CSS  =================================
+
+/* Section Team Awal */
+
+.team-member img {
+    max-width: 140px;
+    box-shadow: -10px -10px #F58D17;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+/* Section Team Akhir */

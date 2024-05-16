@@ -1,0 +1,101 @@
+MENGAPA MEMILIH KAMI CODE :
+
+================================================ HTML ======================================
+
+
+<!-- Section Fatures Awal -->
+    <!-- <section id="fatures" class="fatures bg-cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 class="text-white">Mengapa Memilih Kami</h1>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsum
+                        saepe ea et ab ducimus!
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="fatures-content p-4 text-center">
+                        <div class="fatures-icon">
+                            <i class="ri-wifi-line"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Free Wi-fi</h4>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iusto,
+                            optio in aperiam
+                            quae quis.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="fatures-content p-4 text-center">
+                        <div class="fatures-icon">
+                            <i class="ri-timer-line"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Penggriman Cepat</h4>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iusto,
+                            optio in aperiam
+                            quae quis.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="fatures-content p-4 text-center">
+                        <div class="fatures-icon">
+                            <i class="ri-user-line"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Karyawan Ramah</h4>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iusto,
+                            optio in aperiam
+                            quae quis.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="fatures-content p-4 text-center">
+                        <div class="fatures-icon">
+                            <i class="ri-shield-cross-line"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Kebersihan Terjaga</h4>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis iusto,
+                            optio in aperiam
+                            quae quis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Section Fatures Akhir -->
+
+
+
+
+================================= CSS =========================================
+/* Section Fatures Awal */
+
+.fatures {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../project-1-img/home3.jpg");
+    background-size: cover;
+}
+
+.fatures-content {
+    border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.fatures-content .fatures-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #F58D17;
+    color: #FFFF;
+    font-size: 28px;
+    display: inline-grid;
+    align-items: center;
+    text-align: center;
+}
+
+/* Section Fatures Akhir */
+
+
+
+

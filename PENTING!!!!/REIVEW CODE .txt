@@ -1,0 +1,159 @@
+REIVEW CODE :
+
+
+
+========================================== HTML ======================================
+
+ <!-- Section Review Awal-->
+
+    <!-- <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 class="text-white">Komentar Pelanggan</h1>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rerum minima
+                        natus debitis
+                        doloribus laborum?</p>
+                </div>
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+
+                </div>
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="review bg-white p-5 text-center">
+                                    <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                        architecto nemo cupiditate? Eaque, obcaecati eum. Deleniti sapiente distinctio
+                                        velit aut odio beatae maiores labore totam illo earum itaque libero, sed
+                                        voluptates veniam recusandae fugiat incidunt necessitatibus soluta nam autem
+                                        delectus deserunt, doloribus adipisci. Impedit et, ex dolorum quis id
+                                        voluptatibus atque. Tenetur pariatur nihil eveniet voluptatem ad accusantium
+                                        magni aliquid qui mollitia assumenda unde maiores non aspernatur earum vel,
+                                        minima accusamus quibusdam vero aliquam. Minus sunt, alias amet dicta voluptas
+                                        ab, architecto quaerat incidunt fugiat impedit numquam nisi. Maxime sapiente
+                                        eligendi quis hic dolorum voluptatum, dolore itaque fugit temporibus quod
+                                        molestias sunt facere aut expedita natus ad. Et fugit molestias aliquam facere
+                                        sunt, maiores totam autem necessitatibus, praesentium harum laboriosam provident
+                                        quia amet optio dolorum quod nobis dignissimos, cupiditate omnis perferendis
+                                        molestiae! Ducimus explicabo laborum quibusdam, consequuntur dolorem iusto,
+                                        atque hic accusamus pariatur labore, vero porro delectus totam enim placeat.</p>
+
+                                    <div class="person">
+                                        <img src="./project-1-img/Review/Review Avatar (1).png" alt="Review">
+                                        <h4>Buttercream Rose</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="review bg-white p-5 text-center">
+                                    <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                        architecto nemo cupiditate? Eaque, obcaecati eum. Deleniti sapiente distinctio
+                                        velit aut odio beatae maiores labore totam illo earum itaque libero, sed
+                                        voluptates veniam recusandae fugiat incidunt necessitatibus soluta nam autem
+                                        delectus deserunt, doloribus adipisci. Impedit et, ex dolorum quis id
+                                        voluptatibus atque. Tenetur pariatur nihil eveniet voluptatem ad accusantium
+                                        magni aliquid qui mollitia assumenda unde maiores non aspernatur earum vel,
+                                        minima accusamus quibusdam vero aliquam. Minus sunt, alias amet dicta voluptas
+                                        ab, architecto quaerat incidunt fugiat impedit numquam nisi. Maxime sapiente
+                                        eligendi quis hic dolorum voluptatum, dolore itaque fugit temporibus quod
+                                        molestias sunt facere aut expedita natus ad. Et fugit molestias aliquam facere
+                                        sunt, maiores totam autem necessitatibus, praesentium harum laboriosam provident
+                                        quia amet optio dolorum quod nobis dignissimos, cupiditate omnis perferendis
+                                        molestiae! Ducimus explicabo laborum quibusdam, consequuntur dolorem iusto,
+                                        atque hic accusamus pariatur labore, vero porro delectus totam enim placeat.</p>
+
+                                    <div class="person">
+                                        <img src="./project-1-img/Review/Review Avatar (2).png" alt="Review">
+                                        <h4>Hollywod Hot</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="review bg-white p-5 text-center">
+                                    <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                                        architecto nemo cupiditate? Eaque, obcaecati eum. Deleniti sapiente distinctio
+                                        velit aut odio beatae maiores labore totam illo earum itaque libero, sed
+                                        voluptates veniam recusandae fugiat incidunt necessitatibus soluta nam autem
+                                        delectus deserunt, doloribus adipisci. Impedit et, ex dolorum quis id
+                                        voluptatibus atque. Tenetur pariatur nihil eveniet voluptatem ad accusantium
+                                        magni aliquid qui mollitia assumenda unde maiores non aspernatur earum vel,
+                                        minima accusamus quibusdam vero aliquam. Minus sunt, alias amet dicta voluptas
+                                        ab, architecto quaerat incidunt fugiat impedit numquam nisi. Maxime sapiente
+                                        eligendi quis hic dolorum voluptatum, dolore itaque fugit temporibus quod
+                                        molestias sunt facere aut expedita natus ad. Et fugit molestias aliquam facere
+                                        sunt, maiores totam autem necessitatibus, praesentium harum laboriosam provident
+                                        quia amet optio dolorum quod nobis dignissimos, cupiditate omnis perferendis
+                                        molestiae! Ducimus explicabo laborum quibusdam, consequuntur dolorem iusto,
+                                        atque hic accusamus pariatur labore, vero porro delectus totam enim placeat.</p>
+
+                                    <div class="person">
+                                        <img src="./project-1-img/Review/Review Avatar (3).png" alt="Review">
+                                        <h4>Sofia Rose</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+        </div>
+    </section> -->
+
+    <!-- Section Review Akhri-->
+
+================================================= CSS  ================================================
+
+
+
+/* Section Review Awal */
+
+#reviews {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../project-1-img/home1.jpg");
+    background-size: cover;
+}
+
+.person img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Section Review Akhri */

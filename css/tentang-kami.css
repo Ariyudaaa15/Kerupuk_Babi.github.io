@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&family=Podkova:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: "Podkova", serif;
+    font-size: 20px;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.shadow-on {
+    transition: all 0.5s;
+}
+
+.shadow-on:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Awal */
+
+h1,
+h2 {
+    font-weight: bold;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* 
+img {
+    width: 100%;
+} */
+
+.navbar .namausaha {
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Kreon", serif;
+}
+
+.navbar .namausaha span {
+    color: red;
+}
+
+.slide-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../project-1-img/Slide\ 2.jpg");
+    background-size: cover;
+}
+
+.slide-1 .tentangkami-text {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 7px 10px orange;
+}
+
+/* Navbar Akhir */
+
+/* Section Awal Tentang Kami */
+
+.tentang-kami .about {
+    margin-bottom: 7px;
+}
+
+.tentang-kami .about .judul-tentanngkami {
+    font-size: 20px;
+    margin-left: -90px;
+    text-align: center;
+}
+
+.tentang-kami .about .text-paraf {
+    margin-left: -90px;
+    text-align: justify;
+}
+
+.tentang-kami .container img {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/* 
+#tentang-kami .divider {
+    width: 60px;
+    height: 2px;
+    display: block;
+} */
+
+.img-about {
+    height: 80vh;
+    width: 80%;
+}
+
+/* Section Akhir Tentang Kami */
+
+/* Section Awal Footer */
+
+footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../project-1-img/Slide\ 2.jpg");
+    padding-top: 120px;
+    padding-bottom: 30px;
+    background-size: cover;
+}
+
+footer p,
+footer a {
+    color: rgba(255, 255, 255, 0.75);
+
+}
+
+.footer-top {
+    margin-bottom: 30px;
+}
+
+footer .img-footer {
+    width: 100px;
+    height: 100px;
+}
+
+footer .social-links a {
+    font-weight: normal;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Section Akhir Footer */
+
+/* Responsive Web */
+
+/* @media (max-width : 964px) {
+    .contact-container {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media (max-width : 700px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 20rem !important;
+    }
+
+    .map iframe {
+        height: 400px;
+    }
+} */
+
+
+
+/* Media Query Responsive */
+
+
+/* Laptop */
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+
+    .navbar .namausaha {
+        margin-right: 57%;
+    }
+
+}
+
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 63.5%;
+    }
+
+    .navbar .namausaha {
+        margin-right: 55%;
+    }
+
+    .tentang-kami .container .content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tentang-kami .container h1 {
+        text-align: center;
+        font-size: 35px;
+        margin-top: 25px;
+    }
+
+    .tentang-kami .container .text-paraf {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    footer p {
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    footer h3 {
+        font-size: 24px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+}
+
+/* Mobile Handphone */
+
+@media (max-width: 480px) {
+    html {
+        font-size: 40.1%;
+    }
+
+    /* 
+    .navbar .namausaha {
+        margin-right: 20%;
+    } */
+}

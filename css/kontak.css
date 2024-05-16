@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&family=Podkova:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: "Podkova", serif;
+    font-size: 20px;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.shadow-on {
+    transition: all 0.5s;
+}
+
+.shadow-on:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Awal */
+
+h1,
+h2 {
+    font-weight: bold;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #F58D17;
+}
+
+img {
+    width: 100%;
+}
+
+/* Btn di Navbar Awal */
+
+/* .btn {
+    padding: 10px 16px;
+}
+
+.btn-brand {
+    color: #fff;
+    font-weight: 500;
+    border-color: #F58D17;
+    background-color: #F58D17;
+}
+
+.btn-brand:hover {
+    border-color: #CA7310;
+    background-color: #CA7310;
+    color: #fff;
+} */
+
+.navbar .namausaha {
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Kreon", serif;
+}
+
+.navbar .namausaha span {
+    color: red;
+}
+
+/* Bt di Navbar Akhir */
+
+/* Navbar Akhir */
+
+/* Slider Hero Section Awal */
+
+
+/* Slide Ketiga */
+.slide-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../project-1-img/Slide\ 2.jpg");
+    background-size: cover;
+}
+
+.slide-3 .kontak {
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 7px 10px orange;
+}
+
+/* Section Awal Kontak */
+
+.kontak {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-container {
+    max-width: 960px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.form-container {
+    padding: 20px;
+}
+
+.form-container h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    display: grid;
+    row-gap: 1rem;
+    color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 0.9rem;
+    border-radius: 0.9rem;
+    -webkit-border-radius: 0.9rem;
+    -moz-border-radius: 0.9rem;
+    -ms-border-radius: 0.9rem;
+    -o-border-radius: 0.9rem;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.contact-form .send-button {
+    border: none;
+    outline: none;
+    background: #1d1061;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Section Akhir Kontak */
+
+/* Section Awal Footer */
+
+footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../project-1-img/Slide\ 2.jpg");
+    padding-top: 120px;
+    padding-bottom: 30px;
+    background-size: cover;
+}
+
+footer p,
+footer a {
+    color: rgba(255, 255, 255, 0.75);
+
+}
+
+.footer-top {
+    margin-bottom: 30px;
+}
+
+footer .img-footer {
+    width: 100px;
+    height: 100px;
+}
+
+footer .social-links a {
+    font-weight: normal;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Section Akhir Footer */
+
+
+
+/* Responsive Web */
+
+@media (max-width : 964px) {
+    .contact-container {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media (max-width : 700px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 20rem !important;
+    }
+
+    .map iframe {
+        height: 400px;
+    }
+}
+
+
+/* Media Query Responsive */
+
+
+/* Laptop */
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 100%;
+    }
+
+}
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    html {
+        font-size: 63.5%;
+    }
+
+    .navbar .namausaha {
+        margin-right: 55%;
+    }
+
+
+    .kontak .container .row .intro-text .hubungikami {
+        font-size: 40px;
+    }
+
+    .kontak .container .row .intro-text .text-kontak {
+        font-size: 18px;
+    }
+
+    .contact-container .form-container form input {
+        font-size: 15px;
+    }
+
+    .contact-container .form-container form textarea {
+        font-size: 15px;
+    }
+
+    footer p {
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    footer h3 {
+        font-size: 24px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+}
+
+/* Mobile Handphone */
+
+@media (max-width: 480px) {
+    html {
+        font-size: 40.1%;
+    }
+
+    .slide-3 .kontak {
+        font-size: 50px;
+    }
+
+    .kontak .container .row .intro-text .text-kontak {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .contact-container .form-container .contact-form {
+        margin-top: -20px;
+    }
+
+    .contact-container .form-container form button {
+        font-size: 15px;
+
+    }
+
+
+    footer p {
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    footer h3 {
+        font-size: 20px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    /* 
+    .navbar .namausaha {
+        margin-right: 20%;
+    } */
+}
