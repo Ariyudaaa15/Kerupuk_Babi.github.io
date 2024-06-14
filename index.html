@@ -4,13 +4,17 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kerupuk Babi | Makmur</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="project-1-img/LOGO/Logo Usaha.png" type="image/x-icon" />
 
     <!-- Google Font -->
 
@@ -45,10 +49,10 @@
     <!-- <nav class="navbar navbar-expand-lg shadow-sm fixed-top" style="background-color: var(--bs-body-bg)"> -->
     <nav class="navbar navbar-expand-lg bg-light shadow fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="project-1-img/Logo.png" alt="Logo" width="100px" height="100px">
+            <a class="navbar-brand" href="index.html">
+                <img src="project-1-img/LOGO/Logo Usaha.png" alt="Logo" class="img-navbar">
             </a>
-            <p class="namausaha">Kerupuk <span>Babi</span></p>
+            <p class="namausaha"><b>Kerupuk Babi <br>Makmur</b></p>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -68,111 +72,6 @@
                     <li class="nav-item me-4">
                         <a class="nav-link" href="kontak.html">Hubungi Kami</a>
                     </li>
-
-                    <!-- Tombol Dark Mode -->
-
-                    <!-- <li class="nav-item dropdown">
-
-                        <button class="btn nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <i class="bi bi-sun-fill theme-icon-active" data-theme-icon-active="bi-sun-fill"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li>
-                                <button class="dropdown-item d-flex align-items-center" type="button"
-                                    data-bs-theme-value="light">
-                                    <i class="bi bi-sun-fill me-2 opacity-50" data-theme-icon="bi-sun-fill"></i>
-                                    Light
-                                </button>
-                            </li>
-                            <li>
-                                <button class="dropdown-item d-flex align-items-center" type="button"
-                                    data-bs-theme-value="dark">
-                                    <i class="bi bi-cloud-moon-fill me-2 opacity-50"
-                                        data-theme-icon="bi-cloud-moon-fill"></i>
-                                    Dark
-                                </button>
-                            </li>
-                            <li>
-                            <li>
-                                <button class="dropdown-item d-flex align-items-center" type="button"
-                                    data-bs-theme-value="auto">
-                                    <i class="bi bi-circle-half me-2 opacity-50" data-theme-icon="bi-circle-half"></i>
-                                    Auto
-                                </button>
-                            </li>
-                    </li>
-                </ul>
-
-                </li> -->
-
-
-                    <div class="navbar-extra">
-                        <a href="#" id="search-button"><i data-feather="search"></i></a>
-                        <a href="#" id="shopping-cart-button">
-                            <i data-feather="shopping-cart"></i>
-                            <span class="quantity-badge" x-show="$store.cart.quantity"
-                                x-text="$store.cart.quantity"></span>
-                        </a>
-                    </div>
-
-
-                    <!-- Fitur Secrahing Awal -->
-
-                    <div class="search-form">
-                        <input type="search" id="search-box" placeholder="Mau Cari Apa?...">
-                        <label for="search-box"><i data-feather="search"></i></label>
-                    </div>
-                    <!-- Fitur Secrahing Akhir -->
-
-                    <!-- Shopping Star Card Awal -->
-
-                    <!-- <div class="shopping-cart">
-                    <template x-for="(item, index) in $store.cart.items" x-keys="index">
-                        <div class="cart-item">
-                            <img :src="`./img/Produk/${item.img}`" :alt="item.name">
-                            <div class="item-detail">
-                                <h3 x-text="item.name"></h3>
-                                <div class="item-price">
-                                    <span x-text="rupiah(item.price)"></span> &times;
-                                    <button id="remove" @click="$store.cart.remove(item.id)">&minus;</button>
-                                    <span x-text="item.quantity"></span>
-                                    <button id="add" @click="$store.cart.add(item)">&plus;</button> &equals;
-                                    <span x-text="rupiah(item.total)"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </template>
-
-                    <h4 x-show="!$store.cart.items.length" style="margin-top: 1rem;">Cart Is Empty</h4>
-                    <h4 x-show="$store.cart.items.length">Total : <span x-text="rupiah($store.cart.total)"></span></h4>
-
-
-                    <div class="form-container" x-show="$store.cart.items.length">
-                        <form action="#" id="checkoutForm">
-                            <input type="hidden" name="items" x-model="JSON.stringify($store.cart.items)">
-                            <input type="hidden" name="total" x-model="$store.cart.total">
-                            <h5>Customer Detail</h5>
-
-                            <label for="name">
-                                <span>Nama</span>
-                                <input type="text" name="name" id="name" autocomplete="off">
-                            </label>
-                            <label for="email">
-                                <span>Email</span>
-                                <input type="email" name="email" id="email" autocomplete="off">
-                            </label>
-                            <label for="phone">
-                                <span>Phone</span>
-                                <input type="number" name="phone" id="phone" autocomplete="off">
-                            </label>
-
-                            <button type="submit" value="checkout" class="checkout-button disabled"
-                                id="checkout-button">Checkout</button>
-                        </form>
-                    </div>
-                </div> -->
-                    <!-- Shopping Star Card Akhir -->
                 </ul>
 
 
@@ -186,7 +85,8 @@
 
     <!-- Hero Section Awal -->
 
-    <div id="carouselExampleDark" class="carousel carousel-light slide">
+
+    <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -198,12 +98,13 @@
         <div class="carousel-inner">
 
             <!-- Slider Pertama -->
-            <div class="carousel-item text-center bg-cover vh-100 active slide-1" data-bs-interval="10000">
+            <div class="carousel-item text-center bg-cover vh-100 active slide-1" data-bs-interval="2000">
                 <div class="container h-100 d-flex align-items-center justify-content-center">
                     <div class="row justify-content-center">
                         <div class="col-lg-0">
-                            <h5 class="text-white">Selamat Datang Di Halaman Web</h5>
-                            <h1 class="display-1 fw-bold text-white judul-text">Kerupuk Babi </h1>
+                            <h5 class="text-white">Kerupuk Babi Pilihan</h5>
+                            <h1 class="display-1 fw-bold text-white judul-text">Rasakan kelezatan yang <br> sesungguhnya
+                                dengan setiap gigitan. </h1>
 
                         </div>
                     </div>
@@ -215,8 +116,9 @@
                 <div class="container h-100 d-flex align-items-center justify-content-center">
                     <div class="row justify-content-center">
                         <div class="col-lg-0">
-                            <h5 class="text-white">Produk Yang Ada Di Usaha</h5>
-                            <h1 class="display-1 fw-bold text-white judul-text">Kerupuk Babi </h1>
+                            <h5 class="text-white">Renyah Dan Gurih</h5>
+                            <h1 class="display-1 fw-bold text-white judul-text">Kerupuk babi kami dibuat dengan <br>
+                                bahan-bahan segar dan berkualitas. </h1>
 
                         </div>
                     </div>
@@ -224,19 +126,21 @@
             </div>
 
             <!-- Slider Ketiga -->
-            <div class="carousel-item text-center bg-cover vh-100 slide-3">
+            <div class="carousel-item text-center bg-cover vh-100 slide-3" data-bs-interval="2000">
                 <div class="container h-100 d-flex align-items-center justify-content-center">
                     <div class="row justify-content-center">
                         <div class="col-lg-0">
-                            <h5 class="text-white">Silahkan Memesan Produk Usaha</h5>
-                            <h1 class="display-1 fw-bold text-white judul-text">Kerupuk Babi Enak</h1>
+                            <h5 class="text-white">Tardisional Dan Auntentik</h5>
+                            <h1 class="display-1 fw-bold text-white judul-text">Resep turun temurun yang <br> memberikan
+                                cita
+                                rasa khas. </h1>
 
                         </div>
                     </div>
                 </div>
             </div>
 
-
+            <!-- 
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -246,41 +150,42 @@
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-            </button>
+            </button> -->
         </div>
     </div>
 
     <!-- Hero Section Akhir -->
+
 
     <!-- Tentang Produk Awal -->
 
     <section class="kerupuk" id="kerupuk">
         <div class="container">
             <div class="content">
-                <h1 class="text-center">Tentang Produk Kerupuk Babi</h1>
-                <p class="text-paraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic numquam
-                    inventore sit saepe
-                    aliquam odit porro dolorem illum voluptatum esse distinctio maxime velit, vitae cumque, consequatur
-                    animi corporis doloribus beatae placeat alias harum excepturi rerum pariatur? Excepturi inventore
-                    vel, fuga autem dolore, eos, ullam adipisci quidem enim eius nobis.
+                <h1 class="text-center">Selamat Datang di Kerupuk Babi Makmur
+                </h1>
+                <p class="text-paraf">
+                    Kami dengan bangga mempersembahkan Kerupuk Babi Makmur, produk kerupuk babi berkualitas tinggi yang
+                    telah menjadi pilihan utama bagi pecinta kuliner di Bali sejak tahun 1996. Berlokasi di Desa
+                    Darmasaba, Abiansemal, Badung, Bali, usaha kami didirikan oleh Bapak Cessa dengan tujuan
+                    menghadirkan kerupuk babi yang autentik dan bercita rasa khas.
                     <br>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem excepturi natus consectetur
-                    dolor, dolorum nam ipsum! Voluptatibus nobis, dignissimos blanditiis aspernatur voluptatem, placeat
-                    consectetur tempora harum repellat totam ut quo id unde molestias eveniet quasi. Iusto, sequi? Earum
-                    quibusdam officiis odit eum quasi deserunt nemo! Amet obcaecati ducimus in accusantium deleniti iste
-                    aspernatur dolores, debitis vero fugiat reprehenderit quaerat consequuntur sequi doloremque ea. Rem,
-                    inventore? Laborum saepe fuga quae eligendi repellendus, labore suscipit sunt obcaecati molestiae
-                    facilis inventore dolore eum officiis commodi quis! Iure, facilis dignissimos tempore reprehenderit
-                    corporis, qui, saepe quidem vitae amet eos quos dolores beatae voluptate. Qui!
+                    Kerupuk Babi Makmur dibuat dengan resep tradisional yang telah diwariskan dalam keluarga kami. Kami
+                    menggunakan bahan-bahan alami berkualitas tinggi dan proses pengolahan yang teliti untuk memastikan
+                    setiap gigitan kerupuk babi kami selalu renyah dan gurih. Komitmen kami terhadap kualitas dan
+                    kepuasan pelanggan telah menjadikan Kerupuk Babi Makmur sebagai salah satu produk yang paling dicari
+                    di Bali.
+                    <br>
+                    Di halaman ini, Anda akan menemukan informasi lengkap tentang produk-produk kami, proses pembuatan,
+                    dan sejarah panjang kami dalam menghadirkan kerupuk babi yang lezat. Kami juga menyediakan layanan
+                    pemesanan online untuk memudahkan Anda mendapatkan kerupuk babi favorit Anda dengan cepat dan aman.
+                    <br>
+                    Terima kasih telah mengunjungi situs kami. Kami berharap Anda menikmati pengalaman kuliner yang kami
+                    tawarkan dan menjadi bagian dari perjalanan kami dalam melestarikan cita rasa tradisional Bali.
                 </p>
             </div>
 
-            <h3 class="text-center fw-bold mb-5">Video Pengolahan dan Pembuatan Kerupuk Babi</h3>
-            <center>
-                <video controls height="200" width="400">
-                    <source src="MOTIVASI Belajar CODING!! - YouTube - Google Chrome 2023-11-08 16-24-39.mp4">
-                </video>
-            </center>
+
         </div>
     </section>
 
@@ -291,9 +196,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
-                        <img src="./project-1-img/Logo.png" alt="Logo" class="img-footer mb-4">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsam molestias fuga facilis
-                            sunt modi adipisci maxime nam aspernatur alias.</p>
+                        <img src="./project-1-img/LOGO/Logo Usaha.png" alt="Logo" class="img-footer mb-4">
+                        <p>Kerupuk Babi Spesial adalah usaha keluarga yang berkomitmen untuk menghadirkan kerupuk babi
+                            berkualitas tinggi dengan rasa yang autentik.
+                            Ikuti kami di media sosial untuk mendapatkan update terbaru, promo spesial, dan berbagai
+                            informasi menarik lainnya.
+                        </p>
                         <div class="social-link">
                             <a href="#"><i class="ri-instagram-line"> kerupukbabi</i></a>
                             <a href="#"><i class="ri-facebook-line"> kerupukbabi</i></a>
@@ -301,19 +209,20 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 ms-auto">
+                    <div class="col-lg-5 ms-auto">
                         <h3 class="text-white mb-4">Kontak Kami</h3>
-                        <p class="mb-2">No. Telepon : +62 876 435 231 41</p>
-                        <p class="mb-2">Email : kerupukbaibali1996@gmail.com</p>
+                        <p class="mb-2">No. Telepon : ( 0361 ) 881 235 91</p>
+                        <p class="mb-2">No. Whatsapps : +62 876 435 231 41</p>
+                        <p class="mb-2">Email : kerupukbabi96@gmail.com</p>
                         <p class="mb-0">Alamat : Banjar Baler Pasar Desa Adat Tegal Darmasaba Abiansemal Badung</p>
                     </div>
 
 
                     <div class="col-lg-3 ms-auto">
-                        <h3 class="text-white mb-4">Jam Buka</h3>
+                        <h3 class="text-white mb-4">Jam Operasional</h3>
                         <p class="mb-2">Senin - Jumat 10.00 - 21.00 Wita</p>
-                        <p class="mb-2">Sabtu - Minggu 11.00 - 20.00 Wita</p>
-
+                        <p class="mb-2">Sabtu - Minggu 11.00 20.00 Wita</p>
+                        <p class="mb-2">Hari Libur Nasional Tutup</p>
                     </div>
                 </div>
             </div>
@@ -324,7 +233,7 @@
                 <div class="row">
                     <div class="col-auto">
                         <p class="mb-0">
-                            Copyrights Kerupuk Babi Bali 2024
+                            © 2024 Kerupuk Babi Spesial. Semua hak dilindungi.
                         </p>
                     </div>
                 </div>
@@ -345,92 +254,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
-    <!-- Color Mode JS -->
-    <script>
-        /*!
-     * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
-     * Copyright 2011-2024 The Bootstrap Authors
-     * Licensed under the Creative Commons Attribution 3.0 Unported License.
-     */
-
-        //     (() => {
-        //         'use strict'
-
-        //         const getStoredTheme = () => localStorage.getItem('theme')
-        //         const setStoredTheme = theme => localStorage.setItem('theme', theme)
-
-        //         const getPreferredTheme = () => {
-        //             const storedTheme = getStoredTheme()
-        //             if (storedTheme) {
-        //                 return storedTheme
-        //             }
-
-        //             return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-        //         }
-
-        //         const setTheme = theme => {
-        //             if (theme === 'auto') {
-        //                 document.documentElement.setAttribute('data-bs-theme', (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
-        //             } else {
-        //                 document.documentElement.setAttribute('data-bs-theme', theme)
-        //             }
-        //         }
-
-        //         setTheme(getPreferredTheme())
-
-        //         const showActiveTheme = (theme, focus = false) => {
-        //             const themeSwitcher = document.querySelector('#bd-theme')
-
-        //             if (!themeSwitcher) {
-        //                 return
-        //             }
-
-        //             const themeSwitcherText = document.querySelector('#bd-theme-text')
-        //             const activeThemeIcon = document.querySelector('.theme-icon-active')
-        //             const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
-        //             const iconOfActiveBtn = btnToActive.querySelector('i').dataset.themeIcon;
-
-        //             document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-        //                 element.classList.remove('active')
-        //                 element.setAttribute('aria-pressed', 'false')
-        //             })
-
-        //             btnToActive.classList.add('active')
-        //             btnToActive.setAttribute('aria-pressed', 'true')
-        //             activeThemeIcon.classList.remove(activeThemeIcon.dataset.themeIconActive);
-        //             activeThemeIcon.classList.add(iconOfActiveBtn);
-        //             activeThemeIcon.dataset.iconActive = iconOfActiveBtn;
-        //             const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
-        //             themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
-
-        //             if (focus) {
-        //                 themeSwitcher.focus()
-        //             }
-        //         }
-
-        //         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-        //             const storedTheme = getStoredTheme()
-        //             if (storedTheme !== 'light' && storedTheme !== 'dark') {
-        //                 setTheme(getPreferredTheme())
-        //             }
-        //         })
-
-        //         window.addEventListener('DOMContentLoaded', () => {
-        //             showActiveTheme(getPreferredTheme())
-
-        //             document.querySelectorAll('[data-bs-theme-value]')
-        //                 .forEach(toggle => {
-        //                     toggle.addEventListener('click', () => {
-        //                         const theme = toggle.getAttribute('data-bs-theme-value')
-        //                         setStoredTheme(theme)
-        //                         setTheme(theme)
-        //                         showActiveTheme(theme, true)
-        //                     })
-        //                 })
-        //         })
-        //     })()
-        // </script>
 
     <!-- AOS Animation -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

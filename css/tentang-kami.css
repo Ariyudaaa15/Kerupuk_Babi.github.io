@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&family=Podkova:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@
 body {
     font-family: "Podkova", serif;
     font-size: 20px;
+    background-color: #f0f0f0;
 }
 
 section {
@@ -54,15 +56,214 @@ img {
     color: red;
 }
 
+
+/* Navbar Search */
+
+.navbar .search-form {
+    position: absolute;
+    top: 100%;
+    right: 7%;
+    background-color: #fff;
+    width: 50rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.navbar .search-form.active {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+}
+
+.navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.1rem;
+    color: var(--bg);
+    padding: 1rem;
+}
+
+.navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: var(--bg);
+}
+
+/* Shopping Cart */
+
+#shopping-cart-button {
+    position: relative;
+}
+
+#shopping-cart-button .quantity-badge {
+    display: inline-block;
+    padding: 1px 5px;
+    background-color: red;
+    font-size: 1rem;
+    position: absolute;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    top: 0;
+    right: -2px;
+}
+
+.shopping-cart {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: 100vh;
+    width: 35rem;
+    padding: 0 1.5rem;
+    background-color: white;
+    color: var(--bg);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.shopping-cart .cart-item {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #666;
+    position: relative;
+}
+
+.shopping-cart img {
+    height: 4rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.shopping-cart h3 {
+    font-size: 1.4rem;
+}
+
+.shopping-cart .item-price {
+    font-size: 1.1rem;
+}
+
+.shopping-cart .cart-item #add,
+.shopping-cart .cart-item #remove {
+    display: inline-block;
+    padding: 2px 5px;
+    cursor: pointer;
+    margin: 0 8px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.shopping-cart h4 {
+    font-size: 1.7rem;
+    margin-top: -1rem;
+    text-align: center;
+}
+
+.shopping-cart.active {
+    right: 0;
+}
+
+/* Checkout Form */
+
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px dashed black;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.form-container h5 {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.form-container form {
+    width: 100%;
+    text-align: center;
+}
+
+.form-container label {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.form-container span {
+    text-align: right;
+}
+
+.form-container input {
+    background-color: wheat;
+    padding: 5px;
+    font-size: 1rem;
+    width: 70%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.form-container .checkout-button {
+    padding: 6px 14px;
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+
+
+.form-container .checkout-button.disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+
 .slide-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../project-1-img/Slide\ 2.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../project-1-img/WhatsApp\ Image\ Logo.jpg");
     background-size: cover;
 }
 
 .slide-1 .tentangkami-text {
     text-align: center;
     font-weight: bold;
-    text-shadow: 0 7px 10px orange;
 }
 
 /* Navbar Akhir */
@@ -99,7 +300,7 @@ img {
     display: block;
 } */
 
-.img-about {
+.img-tentangkami {
     height: 80vh;
     width: 80%;
 }
@@ -109,7 +310,7 @@ img {
 /* Section Awal Footer */
 
 footer {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../project-1-img/Slide\ 2.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../project-1-img/WhatsApp\ Image\ Logo.jpg");
     padding-top: 120px;
     padding-bottom: 30px;
     background-size: cover;
@@ -142,28 +343,6 @@ footer .social-links a {
 }
 
 /* Section Akhir Footer */
-
-/* Responsive Web */
-
-/* @media (max-width : 964px) {
-    .contact-container {
-        margin: 0 auto;
-        width: 90%;
-    }
-}
-
-@media (max-width : 700px) {
-    .contact-container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        margin-top: 20rem !important;
-    }
-
-    .map iframe {
-        height: 400px;
-    }
-} */
-
 
 
 /* Media Query Responsive */
@@ -231,8 +410,20 @@ footer .social-links a {
         font-size: 40.1%;
     }
 
-    /* 
-    .navbar .namausaha {
-        margin-right: 20%;
-    } */
+    .tentang-kami .container .about .text-paraf {
+        margin-left: 25px;
+        font-size: 18px;
+    }
+
+    footer p {
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    footer h3 {
+        font-size: 20px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
 }

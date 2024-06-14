@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&family=Podkova:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@
 body {
     font-family: "Podkova", serif;
     font-size: 20px;
+    background-color: #f0f0f0;
 }
 
 section {
@@ -65,14 +67,13 @@ img {
 
 /* Slide Kedua */
 .slide-2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../project-1-img/Slide\ 2.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../project-1-img/WhatsApp\ Image\ Logo.jpg");
     background-size: cover;
 }
 
 .slide-2 .produkkami {
     text-align: center;
     font-weight: bold;
-    text-shadow: 0 7px 10px orange;
 
 }
 
@@ -101,14 +102,8 @@ img {
     box-shadow: 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.produk .nav-pills .nav-link.active {
-    background-color: #F58D17;
-    color: #fff;
-}
 
-.produk-all {
-    cursor: pointer;
-}
+
 
 .product-icons {
     display: flex;
@@ -136,7 +131,7 @@ img {
 /* Section Awal Footer */
 
 footer {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../project-1-img/Slide\ 2.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../project-1-img/WhatsApp\ Image\ Logo.jpg");
     padding-top: 120px;
     padding-bottom: 30px;
     background-size: cover;
@@ -171,31 +166,6 @@ footer .social-links a {
 /* Section Akhir Footer */
 
 
-
-/* Responsive Web */
-
-@media (max-width : 964px) {
-    .contact-container {
-        margin: 0 auto;
-        width: 90%;
-    }
-}
-
-@media (max-width : 700px) {
-    .contact-container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        margin-top: 20rem !important;
-    }
-
-    .map iframe {
-        height: 400px;
-    }
-}
-
-
-
-
 /* Media Query Responsive */
 
 
@@ -209,6 +179,7 @@ footer .social-links a {
     .navbar .namausaha {
         margin-right: 57%;
     }
+
 
 }
 
@@ -291,8 +262,5 @@ footer .social-links a {
     }
 
 
-    /* 
-    .navbar .namausaha {
-        margin-right: 20%;
-    } */
+
 }
